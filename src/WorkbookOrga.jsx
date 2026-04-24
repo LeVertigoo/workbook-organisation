@@ -550,7 +550,7 @@ ${resultHtml || buildResultHtml()}
 
               <span className="lbl">Dans ta semaine actuelle, as-tu des créneaux de 2h+ sans interruption ? *</span>
               <div className="choice-3">
-                {[['often', 'Oui, souvent'], ['sometimes', 'Parfois, mais c'est rare'], ['rarely', 'Rarement ou jamais']].map(([v, l]) => (
+                {[['often', 'Oui, souvent'], ['sometimes', 'Ça peut arriver'], ['rarely', 'Rarement ou jamais']].map(([v, l]) => (
                   <button key={v} className={`choice-row${largeBlocks === v ? ' sel' : ''}`} onClick={() => setLargeBlocks(v)}>{l}</button>
                 ))}
               </div>
